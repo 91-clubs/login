@@ -1,162 +1,133 @@
-/* Reset */
+/* General styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
-  color: #2d2d2d;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-/* Header */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header styles */
 header {
-  background: #0d6efd; /* blue */
-  color: #fff;
-  padding: 15px 0;
-}
-
-header .container {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
 header h1 {
-  font-size: 1.8rem;
-  font-weight: bold;
+    font-size: 2.5rem;
 }
 
-nav .btn {
-  margin-left: 12px;
-  padding: 8px 18px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+header p {
+    font-size: 1.2rem;
 }
 
-nav .register {
-  background: #ffc107; /* yellow */
-  color: #000;
+/* Content section */
+.content {
+    background-color: #fff;
+    padding: 40px 0;
+    margin-top: 20px;
 }
 
-nav .login {
-  background: #198754; /* green */
-  color: #fff;
+.content h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-nav .btn:hover {
-  opacity: 0.9;
+.content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
-/* Main */
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 20px auto;
+.content ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
-h2 {
-  margin-bottom: 10px;
-  color: #0d6efd;
+.content ol {
+    margin-left: 20px;
+    font-size: 1.1rem;
 }
 
-h3 {
-  margin: 15px 0 8px;
-  color: #444;
-}
-
-p {
-  margin-bottom: 12px;
-}
-
-ul, ol {
-  margin: 12px 0 20px 20px;
-}
-
-/* Table */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 15px 0;
-}
-
-table th, table td {
-  padding: 10px;
-  border: 1px solid #ddd;
-  text-align: center;
-}
-
-table th {
-  background: #0d6efd;
-  color: #fff;
-}
-
-/* CTA */
-.cta {
-  text-align: center;
-  background: #f8f9fa;
-  padding: 25px;
-  border-radius: 10px;
-  margin: 30px 0;
-}
-
-.cta .btn {
-  display: inline-block;
-  margin: 8px;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.cta .register {
-  background: #ffc107;
-  color: #000;
-}
-
-.cta .login {
-  background: #198754;
-  color: #fff;
-}
-
-.cta .btn:hover {
-  transform: scale(1.05);
-}
-
-/* Footer */
-footer {
-  background: #212529;
-  color: #fff;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 30px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  header .container {
-    flex-direction: column;
+.content .cta-buttons {
+    margin-top: 30px;
     text-align: center;
-  }
+}
 
-  nav {
-    margin-top: 10px;
-  }
-
-  nav .btn {
-    margin: 6px;
+.content .cta-buttons .btn {
     display: inline-block;
-  }
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
 
-  table th, table td {
-    font-size: 0.9rem;
-  }
+.content .cta-buttons .btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .content h2 {
+        font-size: 1.6rem;
+    }
+
+    .content p,
+    .content ul,
+    .content ol {
+        font-size: 1rem;
+    }
+
+    .content .cta-buttons .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .content h2 {
+        font-size: 1.4rem;
+    }
+
+    .content .cta-buttons .btn {
+        padding: 8px 18px;
+        font-size: 1rem;
+    }
 }
