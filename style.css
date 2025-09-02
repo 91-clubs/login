@@ -1,0 +1,113 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #333;
+}
+a { color: #ef233c; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header */
+.header {
+  background: #2b2d42;
+  padding: 15px 0;
+}
+.header .logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+.header nav .btn { margin-left: 10px; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #2b2d42, #8d99ae);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+.hero h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.hero .cta .btn { margin: 0 10px; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #ef233c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn:hover { background: #d90429; }
+.btn-outline {
+  background: transparent;
+  border: 2px solid #ef233c;
+  color: #ef233c;
+}
+.btn-outline:hover { background: #ef233c; color: #fff; }
+
+/* Article */
+.article {
+  padding: 40px 0;
+}
+.article h2 {
+  margin: 20px 0 10px;
+  color: #2b2d42;
+}
+.article p, .article li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+.article table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.center { text-align: center; }
+
+/* Footer */
+.footer {
+  background: #2b2d42;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+.footer .btn { margin-left: 8px; }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .flex-between { flex-direction: column; text-align: center; }
+  .header nav { margin-top: 10px; }
+  .hero h2 { font-size: 24px; }
+  .hero p { font-size: 16px; }
+  .article table td { font-size: 14px; }
+}
