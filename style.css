@@ -20,7 +20,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #4CAF50;
+    background-color: #d32f2f; /* Red color for header */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -28,6 +28,7 @@ header {
 
 header h1 {
     font-size: 2.5rem;
+    color: #fff;
 }
 
 header p {
@@ -43,7 +44,7 @@ header p {
 
 .content h2 {
     font-size: 1.8rem;
-    color: #333;
+    color: #d32f2f; /* Red color for headings */
     margin-bottom: 20px;
 }
 
@@ -69,7 +70,7 @@ header p {
 
 .content .cta-buttons .btn {
     display: inline-block;
-    background-color: #4CAF50;
+    background-color: #d32f2f; /* Red color for buttons */
     color: white;
     padding: 12px 25px;
     margin: 10px;
@@ -77,10 +78,12 @@ header p {
     border-radius: 5px;
     font-size: 1.2rem;
     transition: background-color 0.3s ease;
+    text-align: center; /* Make sure the text inside buttons is centered */
+    min-width: 200px; /* Ensure the buttons have a minimum width */
 }
 
 .content .cta-buttons .btn:hover {
-    background-color: #45a049;
+    background-color: #c62828; /* Darker red on hover */
 }
 
 /* Footer styles */
